@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Tooltip example</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Tooltip example</h1>
+        <div id="app">
+            <span id="target">Tooltip target</span>
+        </div>
+        <script src="Tooltip.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Tooltip.init("#target", "Tooltip example", {
+                    position: "right"
+                });
+            });
+        </script>
+    </body>
+</html>
